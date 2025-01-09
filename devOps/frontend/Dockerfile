@@ -17,9 +17,9 @@ FROM node:20-alpine AS runner
 WORKDIR /app
 
 COPY --from=builder_and_runner /app/.next/standalone ./
-COPY --from=builder_and_runner /app/.next/static/ ./
+COPY --from=builder_and_runner /app/.next/static/ ./static
 COPY --from=builder_and_runner /app/public/ ./public
-
+COPY --from=builder_and_runner /app/package.json ./
 
 EXPOSE 3000
 CMD [ "server.js"]
