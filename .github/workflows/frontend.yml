@@ -27,6 +27,7 @@ jobs:
         uses: docker/login-action@v2
         with:
           username: 'mitch1009'
+          registry: ghcr.io
           password: ${{ secrets.GITHUB_TOKEN }}
       - name: validate frontend app
         run: |
