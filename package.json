@@ -6,7 +6,8 @@
   "scripts": {
     "frontend": "pnpm --filter frontend ",
     "backend": "pnpm --filter backend ",
-    "doc": "pnpm --filter docs "
+    "doc": "pnpm --filter docs ",
+    "docker:fr": "docker build -t local/frontend:0.0.1 -f devOps/frontend/Dockerfile ./frontend"
   },
   "keywords": [],
   "author": "",
