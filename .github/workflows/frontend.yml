@@ -37,5 +37,5 @@ jobs:
         run: |
           pnpm docker:fr
       - name: push to ghcr.io
-        run: docker push ghcr.io/mitch1009/train-frontend:0.0.1
+        run: docker push ghcr.io/mitch1009/train/train-frontend:0.0.1
   
