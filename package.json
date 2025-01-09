@@ -7,7 +7,7 @@
     "frontend": "pnpm --filter frontend ",
     "backend": "pnpm --filter backend ",
     "doc": "pnpm --filter docs ",
-    "docker:fr": "docker build -t ghcr.io/mitch1009/train-frontend:0.0.1 -f devOps/frontend/Dockerfile ./frontend"
+    "docker:fr": "docker build -f devOps/frontend/Dockerfile ./frontend"
   },
   "keywords": [],
   "author": "",

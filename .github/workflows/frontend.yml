@@ -35,7 +35,7 @@ jobs:
           pnpm frontend build
       - name: build docker image
         run: |
-          pnpm docker:fr
+          pnpm docker:fr -t ghcr.io/mitch1009/train/train-frontend:0.0.1
       - name: push to ghcr.io
         run: docker push ghcr.io/mitch1009/train/train-frontend:0.0.1
   
