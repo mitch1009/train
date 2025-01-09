@@ -1,12 +1,12 @@
 {
-  "name": "train",
+  "name": "backend",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "frontend": "pnpm --filter frontend ",
-    "backend": "pnpm --filter backend ",
-    "doc": "pnpm --filter docs "
+    "dev": "nodemon app.js",
+    "start": "node app.js",
+    "build": "tsc build"
   },
   "keywords": [],
   "author": "",
